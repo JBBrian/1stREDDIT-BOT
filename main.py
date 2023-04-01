@@ -6,11 +6,11 @@ import time
 # Creating reddit instance using praw documentation
 reddit = praw.Reddit(client_id=os.environ.get('CLIENT_ID'),
                      client_secret=os.environ.get('CLIENT_SECRET'),
-                     user_agent='<console:LOKER-BOT:v1.0',
+                     user_agent='LOKER-BOT:v1.0',
                      username='Leto-Joker-Bot',
                      password=os.environ.get('REDDIT_PASS'))
 
-subreddit = reddit.subreddit('h3h3productions')
+subreddit = reddit.subreddit('Dc_Cinematic')
 
 # Extracting and picking a random quote from quote.txt
 with open('quotes.txt', 'r') as data:
